@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"); */
 
 * {
   box-sizing: border-box;
@@ -10,6 +10,8 @@ body {
   font-family: "DM Sans", sans-serif;
   color: white;
   background-color: #34495e;
+  font-size: 12px;
+  line-height: 1;
 }
 
 main {
