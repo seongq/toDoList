@@ -8,24 +8,27 @@
   </head>
   <body>
     <main>
-      <h1 class="clock">Clock</h1>
-      <div class="name">
-        <form class="name-form">
-          <input type="text" placeholder="What's your name?" />
+      <div class="bg"></div>
+      <div class="container">
+        <h1 class="clock">Clock</h1>
+        <div class="name">
+          <form class="name-form">
+            <input type="text" placeholder="What's your name?" />
+          </form>
+          <h1 class="greeting">
+            Hello<span class="greeting-name"> name</span>
+          </h1>
+        </div>
+        <form class="to-do-form">
+          <input type="text" placeholder="What will you do?" />
         </form>
-        <h1 class="greeting">Hello<span class="greeting-name"> name</span></h1>
+        <ul></ul>
       </div>
-      <form class="to-do-form">
-        <input type="text" placeholder="What will you do?" />
-      </form>
-      <ul class="to-do-list">
-        <li>example1</li>
-        <li>example2</li>
-      </ul>
     </main>
-    <nav class="location-information">
-      <span>도시</span>
-      <span>온도</span>
+    <nav class="information">
+      <span class="information-location"></span>
+      <span class="information-weather"></span>
     </nav>
+    <script src="clock.js"></script>
   </body>
 </html>

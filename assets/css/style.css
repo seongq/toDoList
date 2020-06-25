@@ -14,9 +14,47 @@ body {
 
 main {
   height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  animation-name: background-loading;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -26,14 +64,27 @@ ul {
 
 input {
   border: none;
+  background: none;
+  color: white;
+  border-bottom: 1px solid white;
+  transition: color 1s;
 }
 
 input:focus {
   border: none;
   outline: none;
+  border-bottom: 1px solid white;
 }
 
-.location-information {
+input::placeholder {
+  color: white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.information {
   position: fixed;
   top: 0;
   right: 0;
@@ -41,14 +92,16 @@ input:focus {
 
 .clock {
   margin-bottom: 32px;
+  /* text-align: center; */
 }
 
 .name-form {
   margin-bottom: 32px;
 }
 
-.greeting {
+.name .greeting {
   margin-bottom: 32px;
+  /*  */
 }
 
 .to-do-form {
