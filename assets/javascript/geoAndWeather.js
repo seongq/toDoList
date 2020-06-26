@@ -9,7 +9,7 @@ const CELSIUS = "metric";
 function success(pos) {
   lat = pos.coords.latitude;
   lon = pos.coords.longitude;
-  let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${CELSIUS}&appid=${APIKey}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${CELSIUS}&appid=${APIKey}`;
   fetch(url)
     .then(function (response) {
       return response.json();
