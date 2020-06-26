@@ -54,14 +54,27 @@ main .bg {
   top: 350px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
+
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
 }
 
 ul {
   list-style-type: none;
+  display: box;
+}
+
+li {
+  display: block;
+}
+
+button,
+button:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 input {
